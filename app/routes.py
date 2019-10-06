@@ -5,6 +5,8 @@ from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User
 from werkzeug.urls import url_parse
 
+import pandas as pd
+
 
 @app.route('/')
 @app.route('/index')
@@ -33,7 +35,13 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 
-@app.route('/explorer')
+@app.route('/explorer', methods=['GET', 'POST'])
 @login_required
 def explorer():
-    return render_template('explorer.html')
+    form = UploadForm()
+    if request.method == 'POST' and form.validate_on_submit():
+        data_file = request.files['data_file']
+        if data_file:
+            df = pd.read_csv(data_file)
+        return render_template('explorer.html', df=df.to_html(index=False))
+    return render_template('uploader.html', form=form)

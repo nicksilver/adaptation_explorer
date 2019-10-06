@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div align="center">
+        <h1>First, you need to upload your data...</h1>
+    </div>
+     <form action="" method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <p>Select data file in .csv format</p>
+        <p>
+            {{form.data_file(size=32)}}
+        </p>
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+{% endblock %}
