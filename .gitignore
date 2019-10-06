@@ -35,6 +35,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Editor
+.vscode
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -59,6 +62,8 @@ db.sqlite3
 # Flask stuff:
 instance/
 .webassets-cache
+*.db
+.flaskenv
 
 # Scrapy stuff:
 .scrapy
