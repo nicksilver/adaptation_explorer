@@ -1,18 +1,20 @@
 name: /home/nick/workspace/adaptation_explorer/venv3
 channels:
-  - pyviz
   - anaconda
+  - pyviz
   - defaults
   - conda-forge
 dependencies:
   - _libgcc_mutex=0.1=main
+  - alembic=1.2.1=py_0
   - asn1crypto=0.24.0=py37_0
+  - astroid=2.3.1=py37_0
   - attrs=19.1.0=py37_1
   - blas=1.0=mkl
   - bleach=3.1.0=py37_0
   - bokeh=1.3.4=py37_0
   - bzip2=1.0.8=h7b6447c_0
-  - ca-certificates=2019.8.28=0
+  - ca-certificates=2019.9.11=hecc5488_0
   - cairo=1.14.12=h8948797_3
   - cartopy=0.17.0=py37hbb7e04d_1
   - certifi=2019.9.11=py37_0
@@ -42,6 +44,9 @@ dependencies:
   - fastparquet=0.3.2=py37hdd07704_0
   - fiona=1.8.4=py37hc38cc03_0
   - flask=1.1.1=py_0
+  - flask-login=0.4.1=py37_0
+  - flask-migrate=2.4.0=py37_0
+  - flask-sqlalchemy=2.4.0=py_0
   - flask-wtf=0.14.2=py37_1
   - fontconfig=2.13.0=h9420a91_0
   - freetype=2.9.1=h8a8886c_1
@@ -70,6 +75,7 @@ dependencies:
   - ipython=5.8.0=py37_0
   - ipython_genutils=0.2.0=py37_0
   - ipywidgets=7.5.1=py_0
+  - isort=4.3.21=py37_0
   - itsdangerous=1.1.0=py37_0
   - jinja2=2.10.1=py37_0
   - jpeg=9b=h024ee3a_2
@@ -82,6 +88,7 @@ dependencies:
   - kealib=1.4.7=hd0c454d_6
   - kiwisolver=1.1.0=py37he6710b0_0
   - krb5=1.16.1=h173b8e3_7
+  - lazy-object-proxy=1.4.2=py37h516909a_0
   - libboost=1.67.0=h46d08c1_4
   - libcurl=7.65.3=h20c2e04_0
   - libdap4=3.19.1=h6ec2957_0
@@ -106,11 +113,14 @@ dependencies:
   - libxslt=1.1.33=h7d1a2b0_0
   - llvmlite=0.29.0=py37hd408876_0
   - locket=0.2.0=py37_1
+  - logilab-common=1.4.2=py37_1000
   - lxml=4.4.1=py37hefd8a0e_0
+  - mako=1.1.0=py_0
   - mapclassify=2.0.1=py_0
   - markdown=3.1.1=py37_0
   - markupsafe=1.1.1=py37h7b6447c_0
   - matplotlib=3.1.1=py37h5429711_0
+  - mccabe=0.6.1=py_1
   - mistune=0.8.4=py37h7b6447c_0
   - mkl=2019.4=243
   - mkl-service=2.3.0=py37he904b0f_0
@@ -160,6 +170,9 @@ dependencies:
   - pyepsg=0.4.0=py37_0
   - pygments=2.4.2=py_0
   - pykdtree=1.3.1=py37hdd07704_2
+  - pylint=2.4.2=py37_0
+  - pylint-flask=0.6=py_0
+  - pylint-plugin-utils=0.5=py_0
   - pyopenssl=19.0.0=py37_0
   - pyparsing=2.4.2=py_0
   - pyproj=1.9.6=py37h14380d9_0
@@ -169,6 +182,8 @@ dependencies:
   - pysocks=1.7.1=py37_0
   - python=3.7.4=h265db76_1
   - python-dateutil=2.8.0=py37_0
+  - python-dotenv=0.10.3=py_0
+  - python-editor=1.0.4=py_0
   - python-snappy=0.5.4=py37he6710b0_0
   - pytz=2019.2=py_0
   - pyviz=0.10.0=py_0
@@ -211,6 +226,7 @@ dependencies:
   - werkzeug=0.16.0=py_0
   - wheel=0.33.6=py37_0
   - widgetsnbextension=3.5.1=py37_0
+  - wrapt=1.11.2=py37h516909a_0
   - wtforms=2.2.1=py37_0
   - xarray=0.11.3=py37_0
   - xerces-c=3.2.2=h780794e_0
