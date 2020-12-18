@@ -6,6 +6,7 @@ from app.models import User
 from werkzeug.urls import url_parse
 
 import pandas as pd
+import app.lib.network_viz as nv
 
 
 @app.route('/')
@@ -43,5 +44,6 @@ def explorer():
         data_file = request.files['data_file']
         if data_file:
             df = pd.read_csv(data_file)
-        return render_template('explorer.html', df=df.to_html(index=False))
+            script, div = nv.visualize(df, 'Strategy')
+        return render_template('explorer.html', bokeh_script=script, bokeh_div=div)
     return render_template('uploader.html', form=form)
